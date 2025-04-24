@@ -388,8 +388,8 @@ app = FastAPI(title="Health Coach API",
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://bbxsh-93b83.web.app"],  # Only allow your frontend domain
-    # allow_origins=["https://bbxsh-93b83.web.app", "http://localhost:51295", "http://127.0.0.1:8000"],
+    # allow_origins=["https://bbxsh-93b83.web.app"],  # Only allow your frontend domain
+    allow_origins=["https://bbxsh-93b83.web.app", "http://localhost:51295", "http://127.0.0.1:8000","https://localhost:3000/", "https://www.spir.health/","https://staging.spir.health/"],
     allow_credentials=True,
     allow_methods=["*"],  # You can restrict methods like ["POST", "GET"] if needed
     allow_headers=["*"],  # You can restrict specific headers
